@@ -1,0 +1,300 @@
+/*
+Links of useful websites: 
+1)CSS Tricks--->almanac
+2)paletton.com
+3)CSS flexboxhttps://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
+4)Mailchimp:- for designing a webpage to collect email addresses....
+               account passwd: Mymailchimpacc123#           (vpranav364 account)
+
+
+1)##  BORDERS  ##:
+        dotted - Defines a dotted border
+        dashed - Defines a dashed border
+        solid - Defines a solid border
+        double - Defines a double border
+        groove - Defines a 3D grooved border. The effect depends on the border-color value
+        ridge - Defines a 3D ridged border. The effect depends on the border-color value
+      //really nice---> inset - Defines a 3D inset border. The effect depends on the border-color value
+      //really nice---> outset - Defines a 3D outset border. The effect depends on the border-color value
+        none - Defines no border
+        hidden - Defines a hidden border
+
+
+    a)  border-style:dotted,dashed,inset,onset,etc;
+        {
+            border-top/bottom-style:
+            border-right/left-style:
+        }
+        basically border-style can be set in the form border-style: dooted ridge groove solid
+    b)  border-width:5px,width,2px;
+    c)  border-color:green,rec,etc... 
+    
+    
+    d) border: 5px(size) dashed/solid(type) blue(color)
+}
+
+SHADOWS IN CSS: 
+container:hover{
+    box-shadow: rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+
+2) TEXT ALIGN AND ELEMENT ALIGN
+selector{
+    text-align: center/end/right/left....etc;
+}
+
+To align any element like div to the center:
+    div{
+        margin: auto;
+    }
+
+3) BACKGROUND IMAGE:
+selector{
+    background: url(imagelocation) no-repeat center center fixed;
+    background-size: cover;
+}
+
+SHADOW PROPERTY: 
+    selector{
+        box-shadow: 4px 4px 5px #888888;
+    }
+
+
+4) To remove the dots corresponding to elements of unordered list(ul elements)
+
+Syntax:
+li{
+    list-style: none;
+}
+
+
+5) To change the cursor arrow to a hand
+selector {
+    cursor: pointer;
+}
+
+6) To display list elements in the same line: 
+li{
+    display: inline-block
+}
+
+
+TYPES OF SELECTORS:
+                *{
+                    text-align:center;   //selects the entire page
+                }
+
+
+                element,element :
+                h2,p{       //applies the property to all h2s and paragraphs
+                    property:value;        
+                }
+
+
+                element element: 
+                h2 p{      //applies the property to all paragraphs inside h2
+                    property:value;
+                }
+
+
+                element>element:
+                h2>p{   //applies property to paragraphs with direct parent h2
+                    property:value;
+                }     
+
+
+                element+element: 
+                h2+p{   //selects the p element directly after h2
+                    property:value;
+                }
+
+
+Hover property: 
+h2:hover{                       //property gets applied only when the mouse is hovered over the element
+    property:value 
+}
+
+
+Last Child:
+h2:first-child/last-child{ //adds property to last/first child
+    property:value;
+}
+
+
+
+
+
+
+
+CSS TEXT AND FONT
+h2{
+    text-decoration: underline/line-through
+    text-transform:uppercase/lowercase 
+    line-height:20px;
+    font-style:italic;
+    font-weight:bold;
+    font-size:45%;
+    font-family: "Times New Roman"
+}
+
+
+
+IMAGES IN CSS: 
+img {
+    float:left/right;
+
+}
+footer{
+    clear:both;
+    text-align:center;
+}
+
+
+
+BOX MODEL IN CSS: 
+h2{
+    padding: 5px 20px 5px 20px;   {top right bottom left}
+    margin: 0px 20px 0px 20px;    {"   "    "   "   "  "}
+    width:33px;
+    height:55px;
+}
+
+
+PM, EM , REM 
+    p{
+        font-size: 5px;
+    }
+
+    span{
+        font-size: 5rem;
+    }
+
+FLEX BOX: 
+.container{
+    display: flex;
+}
+
+
+
+
+
+CSS 3
+hovering and moving images using transitions
+    img{
+        width:400px;
+        height:400px;
+        margin:10px;
+        transition: all 1s;
+    }
+    img:hover{
+        transform: scale(1.1);
+    }
+
+TRANSITIONS AND TRANSFORMS: 
+    Two properties reqd for transitions to take effect: 
+        a)transition-property   //specifies CSS property ou may apply a transition to an individual property (e.g., background-color or tranform) or to all properties in the rule-set (i.e., all).
+        b)transition-duration   //specifies time span of transition...can be in seconds or millseconds
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+BOOTSTRAP
+
+The total page width of a page can be considered to be 12...If we have a table with columns we can make it really responsive using bootstrap
+We can use the col-'size'-'number' class.....
+
+
+div container can have a class called <col-sm-"fill using number between 0 & 12">....the total width of the page is 12...
+so if we construct 4 cols of col-sm-3 we fill the page width.
+If it goes above 12...it moves to the next line
+
+
+
+    <div class="container">
+		<div class="row">
+    		<div class="col col-sm-3 col-md-6 col-lg-12">
+      			1 of 4
+    		</div>
+    		<div class="col col-sm-3 col-md-6 col-lg-12">
+      			2 of 4
+    		</div>
+    		<div class="col col-sm-3 col-md-6 col-lg-12">
+      			3  of 4
+    		</div>
+    		<div class="col col-sm-3 col-md-6 col-lg-12">
+      			4 of 4
+    		</div>
+  		</div>
+	</div>
+
+
+
+HEADER SECTION:
+<header class="text-center">        //aligns the text in the center
+    Enter text here 
+</header>
+
+
+
+
+
+
+
+
+
+CSS-GRID: 
+container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 2fr      //used to denote the number of columns we need
+        OR 
+    grid-template-columns/rows:repeat('n','m'fr)     //repeats the number of rows or columns n number of times with the width p fr
+    grid-template-columns: auto 1fr 2fr;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+*/
+
+
