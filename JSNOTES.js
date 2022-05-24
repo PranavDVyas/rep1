@@ -1,4 +1,11 @@
-/*
+/* 
+Notes by PRANAV VYAS:
+
+
+
+
+
+
 console.log("Used to throw ")
 
 
